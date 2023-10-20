@@ -1,21 +1,66 @@
 body { 
   background-color: #000; 
   color: #fff;
-  font-family; }
+}
+
+* {
+  box-sizing: border-box;
+}
 
 p {
-font-familiy 
 }
 div {
-  border: 1px solid black;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-  background-color: lightblue;
 }
+
+.headline {
+  font-family: sans-serif;
+  color: green;
+  text-align: center;
+}
+
+#navBar {
+  padding: 1em;
+  background-color: #ff0072;
+  display: flex;
+  justify-content: space-between;
+}
+
 .myDiv {
   border: 5px outset red;
   background-color: lightblue;    
   text-align: center;
+}
+
+.storyRow {
+  display: flex;
+  width: 100%;
+}
+
+.storyContainer {
+  background-color: #333;
+/*  display: inline-block;*/
+/*  width: 48%;*/
+  display: flex;
+/*  align-items: flex-end;*/
+  margin: 0.5em;
+}
+
+.storyContainer img {
+  width: 100%;
+}
+
+.storyImage {
+  width: 25%;
+}
+
+.storyContainer > div {
+  background-color: red;
+  margin: 1em;
+  padding: 1em;
+}
+
+.storyContainer p {
+  margin: 0;
+  padding: 1em;
+  background-color: blue;
 }
