@@ -1,48 +1,59 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans+Condensed:wght@700&display=swap');
-
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
 
 body { 
   background-color: #FFFAFA; 
-  color:  #4d2600;
+  color: #660000;
 }
 
 p {
   font-family: 'Alike', serif;
-  font-size: 15px;
+  font-size: 16px;
 }
+
 * {
   box-sizing: border-box;
 }
 
-
 .headline {
   color: darkred;
   text-align: center;
+  padding-bottom:1em;
+  padding-top:0.2em;
   font-family:'Archivo Black', sans-serif;
   font-size: 45px;
   
-
+  
 }
 
 .headline2 {
- 
- color: black;
- font-size: 25px;
- font: bold;
+  color: black;
+  font-size: 27px;
+  font: bold;
 }
 
 #navBar {
   padding: 1em;
   background-color: darkred;
-
   display: flex;
   justify-content: space-around;
-
+ font-family: 'Alike', serif;
+ font:bold;
 }
+
+/* NAV LINK COLOR */
+#navBar > a, #navBar > a:visited {
+  color: #fff;
+}
+
+/* CONTAINER TO CENTER LOWER DIVS */
+.lowerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .myDiv2 {
   border: 4px dotted white;
   background-color: #FFF5EE;    
@@ -50,10 +61,24 @@ p {
   width: 80%;
   
   display:flex;
-  flax-position: column;
+  /* flax-position: column; */
   justify-content: center;
   flex-wrap:wrap;
   flex-basis: 50%;
+  margin-bottom: 2em;
+}
+.myDiv3 {
+  border: 4px dotted white;
+  background-color: #FFF5EE;    
+  text-align: left;
+  width: 80%;
+  
+  display:flex;
+  /* flax-position: column; */
+  justify-content: center;
+  flex-wrap:wrap;
+  flex-basis: 50%;
+  margin-bottom: 6em;
 }
 
 .myDiv {
@@ -65,37 +90,59 @@ p {
   display: flex;
   justify-content: center;
 }
+
 .storyRow {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  margin-bottom: 6em;
 }
 
 .theme {
   background-color: lightgrey;
-/*  display: inline-block;*/
-/*  width: 48%;*/
+  /*  display: inline-block;*/
+  /*  width: 48%;*/
   display: flex;
-/*  align-items: flex-end;*/
-  margin: 0.5em;
+  /*  align-items: flex-end;*/
+  margin: .5em;
+  flex: 1; /* FORCE ITEMS TO EQUALLY DISTRIBUTE THEIR WIDTH IN FLEXBOX */
 }
 
 .theme img {
   width: 100%;
 }
+.secondimg img {
+  margin-bottom: 6em;
+}
+.myDiv img {
+
+  margin-bottom: 6em;
+}
 
 .storyImage {
-  width: 60%;
-  height:100%;
+  border: 1px;
+  border-radius:4px;
+}
+.storyImage img {
+  width: 230px;
+  height: 250px;
 }
 
 .theme > div {
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   margin: 1em;
   padding: 1em;
 }
 
-.theme p {
-  margin: 0;
-  padding: 1em;
-  background-color: white;
+.theme ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: hsla(0, 100%, 100%, 0.5);
+  font-size: 18px;
+  min-width: 15em; /* MINIMUM WIDTH ON LISTS SO THEY DON'T GET SQUEEZED TOO SMALL */
+}
+
+.intro {
+  font-size: 17px;
 }
