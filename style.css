@@ -1,43 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans+Condensed:wght@700&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+
 body { 
-  background-color: #000; 
-  color: #fff;
+  background-color: #FFFAFA; 
+  color:  #4d2600;
 }
 
+p {
+  font-family: 'Alike', serif;
+  font-size: 15px;
+}
 * {
   box-sizing: border-box;
 }
 
-p {
-}
-div {
-}
 
 .headline {
-  font-family: sans-serif;
-  color: green;
+  color: darkred;
   text-align: center;
+  font-family:'Archivo Black', sans-serif;
+  font-size: 45px;
+  
+
+}
+
+.headline2 {
+ 
+ color: black;
+ font-size: 25px;
+ font: bold;
 }
 
 #navBar {
   padding: 1em;
-  background-color: #ff0072;
+  background-color: darkred;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
+}
+.myDiv2 {
+  border: 4px dotted white;
+  background-color: #FFF5EE;    
+  text-align: left;
+  width: 80%;
+  
+  display:flex;
+  flax-position: column;
+  justify-content: center;
+  flex-wrap:wrap;
+  flex-basis: 50%;
 }
 
 .myDiv {
-  border: 5px outset red;
-  background-color: lightblue;    
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
+.secondimg {
+  display: flex;
+  justify-content: center;
+}
 .storyRow {
   display: flex;
   width: 100%;
 }
 
-.storyContainer {
-  background-color: #333;
+.theme {
+  background-color: lightgrey;
 /*  display: inline-block;*/
 /*  width: 48%;*/
   display: flex;
@@ -45,22 +79,23 @@ div {
   margin: 0.5em;
 }
 
-.storyContainer img {
+.theme img {
   width: 100%;
 }
 
 .storyImage {
-  width: 25%;
+  width: 60%;
+  height:100%;
 }
 
-.storyContainer > div {
-  background-color: red;
+.theme > div {
+  background-color: lightgrey;
   margin: 1em;
   padding: 1em;
 }
 
-.storyContainer p {
+.theme p {
   margin: 0;
   padding: 1em;
-  background-color: blue;
+  background-color: white;
 }
